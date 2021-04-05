@@ -23,6 +23,10 @@ namespace BannerlordCheats.Patches
             {
                 AddTroops(10);
             }
+            if (ScreenManager.TopScreen is GauntletPartyScreen && Keys.IsKeyPressed(InputKey.LeftControl, InputKey.LeftShift, InputKey.K) && BannerlordCheatsSettings.Instance.EnableHotkeys)
+            {
+                AddTroops(100);
+            }            
             else if (ScreenManager.TopScreen is GauntletPartyScreen && Keys.IsKeyPressed(InputKey.LeftControl, InputKey.H) && BannerlordCheatsSettings.Instance.EnableHotkeys)
             {
                 AddTroops(1);
